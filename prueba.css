@@ -1,0 +1,35 @@
+body {
+    background-color: #f3eeee;
+    color: #141414;
+}
+#parrafo{
+        color:rgb(228, 0, 0)
+}
+/* Diseño con Grid */
+.grid-section {
+  padding: 20px;
+  background-color: #fff;
+  margin: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.grid-item {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.grid-item img {
+  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 8px auto 0;
+}
