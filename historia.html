@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Beatles Quiz</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  
+  <style>
+    
+    /* ── HISTORY ── */
+    #historia {
+      background: linear-gradient(135deg, #0d0d1a 0%, #1a0a2e 100%);
+      max-width: 100%;
+      padding: 5rem 2rem;
+    }
+ 
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    @media (max-width: 700px) { .history-grid { grid-template-columns: 1fr; } }
+ 
+    .history-block {
+      border-left: 4px solid var(--yellow);
+      padding-left: 1.5rem;
+    }
+    .history-block h3 {
+      font-family: 'Boogaloo', sans-serif;
+      font-size: 1.6rem;
+      color: var(--yellow);
+    }
+    .history-block p {
+      font-size: 0.95rem;
+      line-height: 1.75;
+      color: #c8bfa8;
+      margin-top: 0.5rem;
+    }
+    body {
+      font-family: 'Lato', sans-serif;
+      background: linear-gradient(150deg, #0a2a6e, #1155b0 50%, #0e7fc2);
+      min-height: 100vh;
+      padding: 30px 16px;
+    }
+
+    h1 {
+      font-family: 'Righteous', cursive;
+      color: #FFE030;
+      font-size: 2.4rem;
+      text-align: center;
+      text-shadow: 3px 3px 0 #b38a00;
+      margin-bottom: 6px;
+    }
+    p{
+        color: #fff;
+        font-size: 1.2rem;
+        max-width: 600px;
+        margin: 0 auto;
+        line-height: 1.6;
+        text-align: justify;
+    }
+  </style>
+</head>
+<body>
+    <h1>La Historia de los Beatles</h1>
+    <div id="historia">
+        <div class="grid">
+            <div class="block-origen">
+                <h3>El Origen (1960)</h3>
+                <p>Todo comenzó en Liverpool, Inglaterra. John Lennon, Paul McCartney, George Harrison y Ringo Starr formaron el grupo que cambiaría la música para siempre. Sus primeros años tocaron en The Cavern Club y en clubs de Hamburgo, Alemania.</p>
+            </div>
+            <div class="block-ascenso">
+                <h3>El Ascenso (1962-1964)</h3>
+                <p>En 1962, lanzaron su primer sencillo "Love Me Do". Rápidamente ganaron popularidad en el Reino Unido y luego en Estados Unidos con su aparición en The Ed Sullivan Show en 1964, marcando el inicio de la "Beatlemanía".</p>
+        </div>
+        <div class="block-evolucion">
+                <h3>La Evolución (1965-1970)</h3>
+                <p>Desde 1965, los Beatles continuaron innovando. Su música se volvió más compleja y experimental, y su impacto en la cultura popular fue aún mayor.Álbumes como Rubber Soul, Revolver y el monumental Sgt. Pepper's Lonely Hearts Club Band redefinieron lo que podía ser un disco de rock.</p>
+        </div>
+        <div class="block-final">
+                <h3>El Final (1970)</h3>
+                <p>A pesar de su éxito, las tensiones internas y las diferencias creativas llevaron a la disolución de la banda en 1970.  Abbey Road fue su último gran triunfo conjunto, sin embargo, su legado musical sigue vivo, inspirando a generaciones de músicos y fans en todo el mundo.</p>
+        </div>
+    </div>
+
+</body>
+</html>
