@@ -19,8 +19,20 @@
       max-width: 640px;
       margin: 0 auto;
     }
-
+    /*titulo principal*/
     h1 {
+      font-family: 'Righteous', cursive;
+      font-size: 3.5rem;
+      color: #FFE030;
+      text-shadow:
+          3px 3px 0px #d4a500,
+          0 0 30px rgba(255, 224, 48, 0.4);
+      margin: 10px 0 20px;
+      letter-spacing: 2px;
+      text-align: center;
+    }
+    /*titulo quiz*/
+    h2 {
       font-family: 'Righteous', cursive;
       color: #FFE030;
       font-size: 2.4rem;
@@ -28,7 +40,16 @@
       text-shadow: 3px 3px 0 #b38a00;
       margin-bottom: 6px;
     }
-
+    /*nav*/
+    .navigation{
+      background-color: #FFE030;
+      color: rgb(25, 20, 20);
+      text-align: center;
+      font-family: 'Righteous', cursive;
+      font-size: 20px;
+      font-weight: 100;
+      word-spacing: 2px;  
+    }
     .subtitle {
       text-align: center;
       color: rgba(255,255,255,0.6);
@@ -36,7 +57,7 @@
       font-size: 0.9rem;
     }
 
-    /* ── Tarjeta por pregunta ── */
+    /* tarjeta por pregunta */
     .question {
       background: rgba(255,255,255,0.08);
       border: 1px solid rgba(255,224,48,0.25);
@@ -52,10 +73,10 @@
       margin-bottom: 14px;
     }
 
-    /* ── Ocultar radios reales ── */
+    /*ocultar radios reales */
     input[type="radio"] { display: none; }
 
-    /* ── Opciones ── */
+    /* opciones */
     .choices {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -78,14 +99,12 @@
       background: rgba(255,255,255,0.22);
     }
 
-    /* ── Feedback ── */
+    /* feedback */
     .feedback { display: none; margin-top: 12px; padding: 10px 14px; border-radius: 8px; font-size: 0.85rem; font-weight: 700; line-height: 1.4; }
     .ok { background: rgba(34,197,94,0.2);  color: #86efac; border: 1px solid rgba(34,197,94,0.4); }
     .ko { background: rgba(239,68,68,0.15); color: #fca5a5; border: 1px solid rgba(239,68,68,0.35); }
 
-    /* ═══════════════════════════════════════════
-       PREGUNTA 1 — correcta: q1-c (1969)
-    ═══════════════════════════════════════════ */
+    /* PREGUNTA 1 — correcta: q1-c (1969)*/
     #q1-c:checked ~ .choices label[for="q1-c"] { background:#16a34a; border-color:#16a34a; }
     #q1-a:checked ~ .choices label[for="q1-a"],
     #q1-b:checked ~ .choices label[for="q1-b"],
@@ -98,9 +117,7 @@
     #q1-b:checked ~ .ko,
     #q1-d:checked ~ .ko  { display:block; }
 
-    /* ═══════════════════════════════════════════
-       PREGUNTA 2 — correcta: q2-b (Paint It Black)
-    ═══════════════════════════════════════════ */
+    /* PREGUNTA 2 — correcta: q2-b (Paint It Black)*/
     #q2-b:checked ~ .choices label[for="q2-b"] { background:#16a34a; border-color:#16a34a; }
     #q2-a:checked ~ .choices label[for="q2-a"],
     #q2-c:checked ~ .choices label[for="q2-c"],
@@ -113,9 +130,7 @@
     #q2-c:checked ~ .ko,
     #q2-d:checked ~ .ko  { display:block; }
 
-    /* ═══════════════════════════════════════════
-       PREGUNTA 3 — correcta: q3-d (Ringo Starr)
-    ═══════════════════════════════════════════ */
+    /*PREGUNTA 3 — correcta: q3-d (Ringo Starr)*/
     #q3-d:checked ~ .choices label[for="q3-d"] { background:#16a34a; border-color:#16a34a; }
     #q3-a:checked ~ .choices label[for="q3-a"],
     #q3-b:checked ~ .choices label[for="q3-b"],
@@ -128,9 +143,7 @@
     #q3-b:checked ~ .ko,
     #q3-c:checked ~ .ko  { display:block; }
 
-    /* ═══════════════════════════════════════════
-       PREGUNTA 4 — correcta: q4-a (Liverpool)
-    ═══════════════════════════════════════════ */
+    /*PREGUNTA 4 — correcta: q4-a (Liverpool)*/
     #q4-a:checked ~ .choices label[for="q4-a"] { background:#16a34a; border-color:#16a34a; }
     #q4-b:checked ~ .choices label[for="q4-b"],
     #q4-c:checked ~ .choices label[for="q4-c"],
@@ -143,9 +156,7 @@
     #q4-c:checked ~ .ko,
     #q4-d:checked ~ .ko  { display:block; }
 
-    /* ═══════════════════════════════════════════
-       PREGUNTA 5 — correcta: q5-c (13)
-    ═══════════════════════════════════════════ */
+    /* PREGUNTA 5 — correcta: q5-c (13)*/
     #q5-c:checked ~ .choices label[for="q5-c"] { background:#16a34a; border-color:#16a34a; }
     #q5-a:checked ~ .choices label[for="q5-a"],
     #q5-b:checked ~ .choices label[for="q5-b"],
@@ -158,9 +169,7 @@
     #q5-b:checked ~ .ko,
     #q5-d:checked ~ .ko  { display:block; }
 
-    /* ═══════════════════════════════════════════
-       PREGUNTA 6 — correcta: q6-b (The Quarrymen)
-    ═══════════════════════════════════════════ */
+    /* PREGUNTA 6 — correcta: q6-b (The Quarrymen)*/
     #q6-b:checked ~ .choices label[for="q6-b"] { background:#16a34a; border-color:#16a34a; }
     #q6-a:checked ~ .choices label[for="q6-a"],
     #q6-c:checked ~ .choices label[for="q6-c"],
@@ -173,9 +182,7 @@
     #q6-c:checked ~ .ko,
     #q6-d:checked ~ .ko  { display:block; }
 
-    /* ═══════════════════════════════════════════
-       PREGUNTA 7 — correcta: q7-c (I Wanna Be Your Man)
-    ═══════════════════════════════════════════ */
+    /* PREGUNTA 7 — correcta: q7-c (I Wanna Be Your Man)*/
     #q7-c:checked ~ .choices label[for="q7-c"] { background:#16a34a; border-color:#16a34a; }
     #q7-a:checked ~ .choices label[for="q7-a"],
     #q7-b:checked ~ .choices label[for="q7-b"],
@@ -188,9 +195,7 @@
     #q7-b:checked ~ .ko,
     #q7-d:checked ~ .ko  { display:block; }
 
-    /* ═══════════════════════════════════════════
-       PREGUNTA 8 — correcta: q8-d (1970)
-    ═══════════════════════════════════════════ */
+    /* PREGUNTA 8 — correcta: q8-d (1970)*/
     #q8-d:checked ~ .choices label[for="q8-d"] { background:#16a34a; border-color:#16a34a; }
     #q8-a:checked ~ .choices label[for="q8-a"],
     #q8-b:checked ~ .choices label[for="q8-b"],
@@ -203,9 +208,7 @@
     #q8-b:checked ~ .ko,
     #q8-c:checked ~ .ko  { display:block; }
 
-    /* ═══════════════════════════════════════════
-       PREGUNTA 9 — correcta: q9-a (Brian Epstein)
-    ═══════════════════════════════════════════ */
+    /* PREGUNTA 9 — correcta: q9-a (Brian Epstein) */
     #q9-a:checked ~ .choices label[for="q9-a"] { background:#16a34a; border-color:#16a34a; }
     #q9-b:checked ~ .choices label[for="q9-b"],
     #q9-c:checked ~ .choices label[for="q9-c"],
@@ -218,9 +221,7 @@
     #q9-c:checked ~ .ko,
     #q9-d:checked ~ .ko  { display:block; }
 
-    /* ═══════════════════════════════════════════
-       PREGUNTA 10 — correcta: q10-b (Paul McCartney)
-    ═══════════════════════════════════════════ */
+    /* PREGUNTA 10 — correcta: q10-b (Paul McCartney) */
     #q10-b:checked ~ .choices label[for="q10-b"] { background:#16a34a; border-color:#16a34a; }
     #q10-a:checked ~ .choices label[for="q10-a"],
     #q10-c:checked ~ .choices label[for="q10-c"],
@@ -233,9 +234,7 @@
     #q10-c:checked ~ .ko,
     #q10-d:checked ~ .ko  { display:block; }
 
-    /* ═══════════════════════════════════════════
-       PREGUNTA 11 — correcta: q11-a (Please Please Me)
-    ═══════════════════════════════════════════ */
+    /* PREGUNTA 11 — correcta: q11-a (Please Please Me) */
     #q11-a:checked ~ .choices label[for="q11-a"] { background:#16a34a; border-color:#16a34a; }
     #q11-b:checked ~ .choices label[for="q11-b"],
     #q11-c:checked ~ .choices label[for="q11-c"],
@@ -248,9 +247,7 @@
     #q11-c:checked ~ .ko,
     #q11-d:checked ~ .ko  { display:block; }
 
-    /* ═══════════════════════════════════════════
-       PREGUNTA 12 — correcta: q12-c (George Martin)
-    ═══════════════════════════════════════════ */
+    /* PREGUNTA 12 — correcta: q12-c (George Martin)*/
     #q12-c:checked ~ .choices label[for="q12-c"] { background:#16a34a; border-color:#16a34a; }
     #q12-a:checked ~ .choices label[for="q12-a"],
     #q12-b:checked ~ .choices label[for="q12-b"],
@@ -263,9 +260,7 @@
     #q12-b:checked ~ .ko,
     #q12-d:checked ~ .ko  { display:block; }
 
-    /* ═══════════════════════════════════════════
-       PREGUNTA 13 — correcta: q13-b (A Hard Day's Night)
-    ═══════════════════════════════════════════ */
+    /* PREGUNTA 13 — correcta: q13-b (A Hard Day's Night)*/
     #q13-b:checked ~ .choices label[for="q13-b"] { background:#16a34a; border-color:#16a34a; }
     #q13-a:checked ~ .choices label[for="q13-a"],
     #q13-c:checked ~ .choices label[for="q13-c"],
@@ -278,9 +273,7 @@
     #q13-c:checked ~ .ko,
     #q13-d:checked ~ .ko  { display:block; }
 
-    /* ═══════════════════════════════════════════
-       PREGUNTA 14 — correcta: q14-d (Bajo)
-    ═══════════════════════════════════════════ */
+    /* PREGUNTA 14 — correcta: q14-d (Bajo)*/
     #q14-d:checked ~ .choices label[for="q14-d"] { background:#16a34a; border-color:#16a34a; }
     #q14-a:checked ~ .choices label[for="q14-a"],
     #q14-b:checked ~ .choices label[for="q14-b"],
@@ -293,9 +286,7 @@
     #q14-b:checked ~ .ko,
     #q14-c:checked ~ .ko  { display:block; }
 
-    /* ═══════════════════════════════════════════
-       PREGUNTA 15 — correcta: q15-a (1964)
-    ═══════════════════════════════════════════ */
+    /* PREGUNTA 15 — correcta: q15-a (1964)*/
     #q15-a:checked ~ .choices label[for="q15-a"] { background:#16a34a; border-color:#16a34a; }
     #q15-b:checked ~ .choices label[for="q15-b"],
     #q15-c:checked ~ .choices label[for="q15-c"],
@@ -318,9 +309,16 @@
 </head>
 <body>
 
-  <div class="quiz-wrap">
+    <a href="index.html" style="text-decoration: none;"><h1>The Beatles Fan</h1> </a>
+      <!-- navegacion -->
+      <div class="navigation">
+          <a style="text-decoration:none" href="quiz.html" type="text/css">Quiz I</a> <a style="text-decoration:none" href="discos.html" type="text/css">Discografía </a> <a style="text-decoration:none" href="historia.html" type="text/css">I Historia</a><style>
+                  a { color: rgb(25, 20, 20); }
+          </style>  
+      </div>
+    <div class="quiz-wrap">
 
-    <h1>🎸 Beatles Quiz</h1>
+    <h2>Beatles Quiz</h2>
     <!-- PREGUNTA 1 -->
     <div class="question">
       <input type="radio" name="q1" id="q1-a">
